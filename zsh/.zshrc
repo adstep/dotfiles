@@ -79,3 +79,7 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # fix folder colors on bash for windows
 LS_COLORS="ow=01;36;40" && export LS_COLORS
+
+source ~/.bin/tmuxinator.zsh
+
+export EDITOR='vim'
