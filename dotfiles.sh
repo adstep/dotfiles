@@ -10,3 +10,4 @@ cp ~/.tmux.conf tmux/.tmux.conf
 cp ~/.vimrc vim/.vimrc
 cp ~/.zshrc zsh/.zshrc
 
+
