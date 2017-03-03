@@ -58,7 +58,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 # Aliases
 #------------------------------------------------------
 #alias tmux='tmux -2'
-alias serve='python -m SimpleHTTPServer'
+alias serve='http-server'
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
@@ -76,3 +76,6 @@ MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # rubygems
 # PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# fix folder colors on bash for windows
+LS_COLORS="ow=01;36;40" && export LS_COLORS
