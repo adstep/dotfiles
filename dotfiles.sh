@@ -1,7 +1,12 @@
 #!/bin/bash
 
-/bin/cp -rf ~/.bashrc bash/.bashrc
-/bin/cp -rf ~/.tmux.conf tmux/.tmux.conf
-/bin/cp -rf ~/.vimrc vim/.vimrc
-/bin/cp -rf ~/.zshrc zsh/.zshrc
+rm bash/.bashrc
+rm tmux/.tmux.conf
+rm vim/.vimrc
+rm zsh/.zshrc
+
+cp ~/.bashrc bash/.bashrc
+cp ~/.tmux.conf tmux/.tmux.conf
+cp ~/.vimrc vim/.vimrc
+cp ~/.zshrc zsh/.zshrc
 
