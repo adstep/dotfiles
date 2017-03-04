@@ -19,8 +19,11 @@ Plugin 'scrooloose/nerdtree'
 " Vim-Code-dark colorscheme
 Plugin 'tomasiser/vim-code-dark'
 
-" Typescript Vim
+" Typescript syntax highlighting
 Plugin 'leafgarland/typescript-vim'
+
+" Javascript syntax higlighting
+Plugin 'pangloss/vim-javascript'
 
 " Ctrl-p
 Plugin 'kien/ctrlp.vim'
@@ -100,8 +103,8 @@ set encoding=utf8
 " Define standard filetype
 set ffs=unix,dos,mac
 
-" let base16colorspace=256
-" colorscheme base16-default-dark
+" Colorscheme
+set t_ut=
 set background=dark
 colorscheme codedark
 

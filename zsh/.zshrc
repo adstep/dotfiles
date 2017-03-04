@@ -60,6 +60,8 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 #alias tmux='tmux -2'
 alias serve='http-server'
 
+alias c='clear'
+
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
 
