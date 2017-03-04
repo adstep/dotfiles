@@ -18,6 +18,7 @@ npm i -g typescript http-server
 
 # Git credential preference
 git config --global credential.helper store
+git config --global push.default matching
 
 # Tmuxinator
 sudo apt-get install ruby
