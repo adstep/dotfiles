@@ -102,7 +102,7 @@ set ffs=unix,dos,mac
 
 " let base16colorspace=256
 " colorscheme base16-default-dark
-" set background=dark
+set background=dark
 colorscheme codedark
 
 set cursorline	" highlight current active line
