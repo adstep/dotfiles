@@ -1,3 +1,5 @@
+Windows Registry Editor Version 5.00
+
 [HKEY_CURRENT_USER\Console]
 "ColorTable00"=dword:00362A28
 "ColorTable01"=dword:00FFC757
