@@ -43,3 +43,6 @@ wget https://github.com/goreliu/wsl-terminal/releases/download/v0.8.11/wsl-termi
 7z x wsl-terminal-0.8.11.7z
 cp wsl-terminal /mnt/c/wsl-terminal/
 rm -rf wsl-terminal-0.8.11.7z
+
+# Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
