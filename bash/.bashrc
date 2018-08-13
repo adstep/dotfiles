@@ -1,10 +1,7 @@
+#!/usr/bin/env bash
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-
-# Setup Home Directory
-cd /mnt/c/dev/
-
-#!/usr/bin/env bash
 
 # Path to the bash it configuration
 export BASH_IT="/home/adstep/.bash_it"
@@ -23,7 +20,7 @@ export SCM_CHECK=true
 source "$BASH_IT"/bash_it.sh
 
 # Fix folder colors
-LS_COLORS="ow=01;36;40" && export LS_COLORS
+# LS_COLORS="ow=01;36;40" && export LS_COLORS
 
 # Git autocomplete
 if [ -f ~/.git-completion.bash ]; then

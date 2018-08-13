@@ -26,9 +26,6 @@ git config --global push.default matching
 # Zsh Syntax Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
 
-# Oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Build Essential
 sudo apt-get install -y build-essential
 
@@ -43,6 +40,13 @@ wget https://github.com/goreliu/wsl-terminal/releases/download/v0.8.11/wsl-termi
 7z x wsl-terminal-0.8.11.7z
 cp wsl-terminal /mnt/c/wsl-terminal/
 rm -rf wsl-terminal-0.8.11.7z
+cp schemes/afterglow.minttyrc /mnt/c/dev/wsl-terminal/etc/themes/afterglow.minttyrc
+
+# Bash-It Install
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
