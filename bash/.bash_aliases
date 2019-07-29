@@ -35,3 +35,5 @@ alias vs15Devenv='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 14.0
 alias vs17Devenv='/mnt/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio/2017/Enterprise/Common7/IDE/devenv.exe'
 alias vs15='find -name "*.sln" | while read sln; do vs15Devenv $sln; done &'
 alias vs17='find -name "*.sln" | while read sln; do vs17Devenv $sln; done &'
+
+alias nmap='"C:\dev\nmap-7.70\nmap.exe"'

@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+cd ~/dev
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+
+export PATH="/opt:$PATH";
 
 # Path to the bash it configuration
 export BASH_IT="/home/adstep/.bash_it"
@@ -50,3 +54,14 @@ shopt -s histappend;
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+[ -e ~/.dircolors ] && eval $(dircolors -b ~/.dircolors) || eval $(dircolors -b)
+
+alias ls='ls --color=auto'
+alias grep='grep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias ll='ls -lF'
+alias la='ls -A'
+alias l='ls -CF'
+eval $(dircolors -b $HOME/.dircolors)

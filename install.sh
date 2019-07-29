@@ -6,9 +6,6 @@ sudo apt-get update
 # 7 Zip
 sudo apt-get install p7zip-full
 
-# ZSH
-sudo apt-get install -y zsh
-
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -22,9 +19,6 @@ sudo npm i -g typescript http-server
 # Git credential preference
 git config --global credential.helper store
 git config --global push.default matching
-
-# Zsh Syntax Highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
 
 # Build Essential
 sudo apt-get install -y build-essential
@@ -47,6 +41,3 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 
 # Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Oh-my-zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
