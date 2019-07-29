@@ -137,7 +137,7 @@ filetype indent on	" enable filetype specific indentation
 """""""""""""""""""""""""""""""""""""""""""""""""
 " Movement
 """""""""""""""""""""""""""""""""""""""""""""""""
-" move vertically by visual line (don't skip wrapped lines) 
+" move vertically by visual line (don't skip wrapped lines)
 nnoremap j gj
 nnoremap k gk
 
