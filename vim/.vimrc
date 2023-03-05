@@ -19,16 +19,6 @@ Plugin 'scrooloose/nerdtree'
 " Vim-Code-dark colorscheme
 Plugin 'tomasiser/vim-code-dark'
 
-" Typescript syntax highlighting
-Plugin 'leafgarland/typescript-vim'
-
-" Javascript syntax higlighting
-Plugin 'pangloss/vim-javascript'
-
-" Ctrl-p
-Plugin 'kien/ctrlp.vim'
-
-
 " Keep Plugin commands between vundle#begin/end.
 
 " All of your Plugins must be added before the following line
