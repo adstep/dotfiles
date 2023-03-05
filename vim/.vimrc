@@ -1,29 +1,34 @@
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Setup Vundler for plugin management
-""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" NERD tree - tree explorer
-Plugin 'scrooloose/nerdtree'
+call plug#begin()
 
 " Vim-Code-dark colorscheme
-Plugin 'tomasiser/vim-code-dark'
+Plug 'tomasiser/vim-code-dark'
 
-" Keep Plugin commands between vundle#begin/end.
+" NERD tree - tree explorer
+Plug 'scrooloose/nerdtree'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Vim-sensable
+Plug 'tpope/vim-sensible'
+
+" Ctrl-p
+Plug 'kien/ctrlp.vim'
+
+" Keep Plugin commands between plug#begin/end.
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -112,7 +117,7 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 " Use smart tabs
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set shiftwidth=2
 set softtabstop=2
 
@@ -138,3 +143,21 @@ nnoremap k gk
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 'ra'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nerd Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-w>b :NERDTreeToggle<cr>
+map <leader>b :NERDTreeToggle<cr>
+
+" split vertical
+map <C-w><Bar> :vsplit<cr>
+map <leader><Bar> :vsplit<cr>
+map <C-w>\ :vsplit<cr>
+map <leader>\ :vsplit<cr>
+
+" split horizontal
+map <C-w>_ :split<cr>
+map <leader>_ :split<cr>
+map <C-w>- :split<cr>
+map <leader>- :split<cr>
