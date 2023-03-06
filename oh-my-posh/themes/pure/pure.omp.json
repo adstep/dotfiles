@@ -7,7 +7,7 @@
                 {
                     "foreground": "#BF616A",
                     "style": "plain",
-                    "template": "{{ .UserName }} ",
+                    "template": "{{ .UserName }}@{{ .HostName }} ",
                     "type": "session"
                 },
                 {
