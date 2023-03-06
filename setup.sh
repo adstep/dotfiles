@@ -9,4 +9,4 @@ cp ./tmux/.tmux.conf.local ~/.tmux.conf.local
 cp vim/.vimrc              ~/.vimrc
 
 # Ensure vim plugins are installed via Vundle
-vim +PluginInstall +qall
+vim +PlugInstall +qall
